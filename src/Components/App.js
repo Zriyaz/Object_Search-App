@@ -11,15 +11,13 @@ class App extends React.Component{
   .get('https://api.unsplash.com/search/photos', {
     params:{ query: term },
   })
-  
   this.setState({images:response.data.results})
-
   } 
   render(){
     return(
-        <div className="bckfull">
+      <div>
          <Header/>
-       <div className="ui container" style={{marginTop:'50px'}}>
+        <div className="ui container" style={       {marginTop:'50px'}}>
          <SearchBar onSubmit={this.onSearchSubmit}/>
          <ImageList image={this.state.images}/>
         </div>

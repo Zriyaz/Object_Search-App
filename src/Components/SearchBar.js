@@ -1,7 +1,4 @@
 import React from "react"
-import "./ImageStyle.css"
-import Header from "./Header"
-import "./Header.css"
 
 export default class SearchBar extends React.Component{
 
@@ -17,7 +14,7 @@ export default class SearchBar extends React.Component{
   render(){
     return(
       <>
-       <div className="ui segment" style={{width:`30%`}, {float:`center`}}>
+       <div className="ui segment" style={{width:`30%`},{float:`center`}}>
         <form onSubmit={this.onFormSubmit} className="ui form" >
          <div className="field">
            <label>Image Search</label>
